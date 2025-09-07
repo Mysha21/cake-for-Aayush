@@ -1,0 +1,88 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background: #fffae6;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+#cake-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.tier {
+  position: relative;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+#top-tier {
+  width: 200px;
+  height: 100px;
+  background: #ffccf2;
+  border: 3px solid #ff99e6;
+}
+
+#bottom-tier {
+  width: 280px;
+  height: 120px;
+  background: #ffe066;
+  border: 3px solid #ffcc33;
+}
+
+.icing {
+  width: 90%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ff4d6d;
+  font-size: 16px;
+}
+
+.candles {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.candle {
+  width: 12px;
+  height: 40px;
+  background: #ff9933;
+  border-radius: 2px;
+  position: relative;
+}
+
+.candle::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 15px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #ffff66;
+}
+
+.candle.out::before {
+  background: gray;
+  box-shadow: none;
+}
